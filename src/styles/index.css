@@ -1,24 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #2c3e50;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
 }
 
 .todoapps {
@@ -56,11 +49,11 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid #ECF0F1;
   outline: none;
   width: 320px;
   background: transparent;
-  color: #fff;
+  color: #ECF0F1;
 }
 
 .todo-input::placeholder {
@@ -73,13 +66,13 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-  color: #fff;
+  background: #f1c40f ;
+  color: #2c3e50;
   text-transform: capitalize;
+}
+
+.todo-button:hover{
+  background-color: #1abc9c;
 }
 
 .todo-input.edit {
@@ -107,39 +100,19 @@ h1 {
   align-items: center;
   margin: 4px auto;
   color: #fff;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 118, 20, 1) 0%,
-    rgba(255, 84, 17, 1) 100%
-  );
+  background: #1abc9c;
 
   padding: 16px;
   border-radius: 5px;
-  width: 90%;
+  width: 50%;
 }
 
-.todo-row:nth-child(4n + 1) {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+.todo-row:nth-child(2n + 1) {
+  background: #3498db;
 }
 
-.todo-row:nth-child(4n + 2) {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
-}
-
-.todo-row:nth-child(4n + 3) {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
+.todo-row:nth-child(2n + 2) {
+  background: #2ecc71;
 }
 
 .icons {
